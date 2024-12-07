@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "HLTV Match Time Converter",
+    "version": "1.0",
+    "description": "Convert match times on HLTV from 24-hour to 12-hour format.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.hltv.org/*"],
+        "css": ["styles.css"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

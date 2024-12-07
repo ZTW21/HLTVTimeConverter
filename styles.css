@@ -1,0 +1,15 @@
+/* Styling for the match times */
+.matchTime {
+    font-size: 12px; /* Adjust font size */
+    line-height: 1; /* Reduce vertical spacing */
+    white-space: nowrap; /* Prevent wrapping */
+    padding-bottom: 4px; /* Add some space beneath the match time */
+}
+
+/* Ensure converted span times look consistent */
+span[data-time-format] {
+    font-size: 9px; /* Optional: adjust font size */
+    line-height: 1; /* Optional: adjust line height */
+    white-space: nowrap; /* Prevent wrapping */
+    padding-bottom: 4px; /* Add consistent bottom padding */
+}
