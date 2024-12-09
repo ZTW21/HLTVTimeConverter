@@ -14,7 +14,7 @@ function convertTimeFormat(element) {
     }
 }
 
-// Function to handle all time conversions, including all three cases
+// Function to handle all time conversions
 function updateAllTimes() {
     // Convert elements with the 'matchTime' class
     const matchTimeElements = document.querySelectorAll('.matchTime');
@@ -27,6 +27,10 @@ function updateAllTimes() {
     // Convert <div> elements with the 'time' class
     const timeDivElements = document.querySelectorAll('.time[data-time-format]');
     timeDivElements.forEach(convertTimeFormat);
+
+    // Convert <span> elements with the 'bold time-time' class
+    const boldTimeElements = document.querySelectorAll('span.bold.time-time');
+    boldTimeElements.forEach(convertTimeFormat);
 }
 
 // Initial conversion for elements present on page load
